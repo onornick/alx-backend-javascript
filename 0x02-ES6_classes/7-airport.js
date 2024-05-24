@@ -16,6 +16,18 @@ export default class Airport {
 		return this._name;
 	}
 
+	set code(value) {
+		if (typeof(value) !== "string"){
+			throw new Error("Value must be a string");
+		}
+
+		this._code = value;
+	}
+
+	get name() {
+		return this._code;
+	}
+
 	toString() {
 		return `[object ${this._code} ]`
 	}
