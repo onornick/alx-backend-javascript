@@ -29,10 +29,6 @@ export default class Airport {
 	}
 
 	toString() {
-		return `[object ${this._code} ]`
+		return `[object ${this._code}]`;
 	}
-
-	[Symbol.for('nodejs.util.inspect.custom')](depth, opts) {
-		return `Airport [${this._code}] { _name: '${this._name}', _code: '${this._code}' }`;
-  }
 }
