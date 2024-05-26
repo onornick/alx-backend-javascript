@@ -1,5 +1,5 @@
 export default function getListtudents() {
-	const student = [
+	return [
 		{
 			id: 1,
 			firstName: "Guillame",
@@ -17,5 +17,4 @@ export default function getListtudents() {
 		}
 	]
 
-	return student;
 }
